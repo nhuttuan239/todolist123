@@ -11,7 +11,7 @@ function App() {
     { id: "task_3", title: "Code with VS", status: 1 },
   ]);
   const [showIncomplete, setShowIncomplete] = useState(true);
-  const [newTask, setNewTask] = useState("123");
+  // const [newTask, setNewTask] = useState("123");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,9 +26,9 @@ function App() {
     }
   };
 
-  const handleInputChange = (e) => {
-    setNewTask(e.target.value);
-  };
+  // const handleInputChange = (e) => {
+  //   setNewTask(e.target.value);
+  // };
 
   const setTaskStatus = (taskId, status) => {
     setTasks(
